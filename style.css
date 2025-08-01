@@ -10,69 +10,41 @@ html {
     scroll-behavior: smooth;
 }
 
-/* APPLY GLOBAL BACKGROUND IMAGE */
-body {
-    background: url('pic/bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: sans-serif;
-    color: #fff; 
-}
-
 /* MAIN HOME SECTION */
 .main {
     width: 100%;
     height: 100vh;
     position: relative;
+    background-color: #f5f5f5;
 }
-
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    margin-top: -3%;
-    margin-left: -2%;
-}
-
-.logo {
-    width: 160px;
-    cursor: pointer;
-}
-
-.logo-inscription {
-    font-size: 14px;
-    color: darkslategray;
-    margin-top: 5px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
 
 /* NAVBAR */
-
 .navbar {
     width: 86%;
     display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
 }
 
+/* LOGO */
 .navbar .logo {
     width: 160px;
     cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
 }
 
+/* NAV LINKS */
 ul {
-    margin-top: -4%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 ul li {
     list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
 }
 
 ul li a {
@@ -80,8 +52,7 @@ ul li a {
     font-weight: bold;
     text-decoration: none;
     color: darkslategray;
-    margin-top: -3%;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 ul li a:hover {
@@ -103,7 +74,7 @@ ul li a:hover {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
-     color: #000; 
+    color: #000;
 }
 
 .info span {
@@ -118,14 +89,14 @@ ul li a:hover {
     padding: 10px 18px;
     border-radius: 10px;
     display: inline-block;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .info a:hover {
     background: rgb(59, 174, 209);
 }
 
-
+/* HERO IMAGE */
 .image {
     width: 30%;
     height: 60%;
@@ -133,7 +104,6 @@ ul li a:hover {
     right: 100px;
     bottom: 0;
 }
-
 
 .image img {
     position: absolute;
@@ -143,8 +113,6 @@ ul li a:hover {
     bottom: 0;
     transition: left 2s ease;
 }
-
-
 
 .image:hover .photo {
     left: 55%;
@@ -161,15 +129,14 @@ ul li a:hover {
     color: #000;
     margin-right: -60px;
     font-size: 40px;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .icons ion-icon:hover {
     color: rgb(59, 174, 209);
 }
 
-/* ===== SECTION STYLING (ABOUT, SKILLS, PROJECTS, CONTACT) ===== */
-
+/* SECTION STYLING */
 .about,
 .skills,
 .education,
@@ -177,14 +144,12 @@ ul li a:hover {
 .projects,
 .contact {
     padding: 60px 10%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ccc;
     border-radius: 10px;
     margin: 20px;
 }
 
-
-/* Headings inside all sections */
 .about h2,
 .skills h2,
 .education h2,
@@ -196,8 +161,6 @@ ul li a:hover {
     color: #000;
 }
 
-
-/* Paragraphs and lists inside sections */
 .about p, .about ul,
 .skills p, .skills ul,
 .education p, .education ul,
@@ -209,14 +172,12 @@ ul li a:hover {
     color: #f1f1f1;
 }
 
-
-
 /* SKILLS BULLET LIST */
 #skills ul {
     list-style-type: disc;
     padding-left: 40px;
     line-height: 1.8;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 #skills li {
@@ -229,42 +190,7 @@ ul li a:hover {
     margin-bottom: 20px;
 }
 
-/*CONTACT LINKS STYLING */
-#contact a {
-    color: rgb(59, 174, 209);
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Spacing */
-
-#education p {
-    margin-bottom: 20px;
-}
-
-
-
-/* Downloading cv */
-.download-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.download-link:hover {
-    background-color: #0056b3;
-}
-
-
-
+/* CONTACT FORM */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -315,7 +241,28 @@ ul li a:hover {
     background-color: rgb(36, 132, 165);
 }
 
+/* EDUCATION SPACING */
+#education p {
+    margin-bottom: 20px;
+}
 
+/* DOWNLOAD CV LINK */
+.download-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+}
+
+/* FOOTER */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #ccc;
@@ -345,8 +292,6 @@ footer .social-links a:hover {
     color: rgb(59, 174, 209);
 }
 
-/*making icons bigger */
 footer .social-links i {
     margin-right: 5px;
 }
-
